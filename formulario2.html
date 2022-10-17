@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <style>
+        body{
+            background-color: rgb(59, 59, 143);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        h2 {
+            color: white;
+        }
+        main {
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px #0000009d;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+            }
+        .area {
+            text-align: center;
+        }
+        .seleciona {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+        div {
+            text-align: center;
+        }
+        .tecnologia {
+            text-align: center;
+        }
+        input, select, textarea, button {
+            border-radius: 5px;
+        }
+        button:hover {
+            color: rgba(2, 206, 94, 0.521);
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <h1>Formulario de Pesquisa!</h1>
+<main>
+
+    <h2>Nome: <input type="text"></h2>
+    <h2>Email: <input type="email"></h2> 
+    <h2>Idade: <input type="number"></h2>
+    <h2 class="area">Qual sua area de desenvolvedor?<br>
+        <input type="radio" name="devweb" value="frontend">Front-End
+        <input type="radio" name="devweb" value="backend">Back-End
+        <input type="radio" name="devweb" value="Fullstack"> Fullstack</h2>
+
+    <h2>Senioridade:<select>
+        <option selecte disabled value="">Selecione</option>
+        <option>Junior</option>
+        <option>Pleno</option>
+        <option>Senior</option>
+    </select></h2>
+    <h2 class="tecnologia">Selecione as tecnologias:</h2>
+    <DIV>
+    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTMl">
+    <label for="tecnologia1" class="seleciona">HTML</label>
+
+    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+    <label for="tecnologia2" class="seleciona">CSS3</label>
+
+    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JAVASCRIPT">
+    <label for="tecnologia3" class="seleciona">JAVA SCRIPT</label>
+
+    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+    <label for="tecnologia4" class="seleciona">PHP</label>
+
+    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="PYTHON">
+    <label for="tecnologia5" class="seleciona">PYTHON</label>
+    </DIV>
+
+    <h2 class="area">Conte um pouco da sua experiencia?</h2>
+    <textarea name="experiencia" id="experiencia" cols="74" rows="10"></textarea>
+    <button type="submit">Enviar!</button>
+
+</main> 
+</form>
+    
+
+
+
+
+
+</body>
+</html>

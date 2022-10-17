@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5 e CSS3</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tenta abrir essas imagens em dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="m.jpg" type="image/jpg">
+        <img src="g.jpg" alt="tamanho grande">
+    </picture>
+
+    <h1> Reproduzindo audios!</h1>
+    <audio preload="metadata"  controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não é compativel com o audio!.
+        <a href="audio.mp3">Clique aqui para baixar o arquivo.</a>
+        </p>    
+    </audio>
+
+    <h1>Inserindo Videos</h1>
+       <iframe width="500" height="350" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
